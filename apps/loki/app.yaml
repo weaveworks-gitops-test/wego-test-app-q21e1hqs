@@ -1,0 +1,15 @@
+---
+apiVersion: wego.weave.works/v1alpha1
+kind: Application
+metadata:
+  labels:
+    wego.weave.works/app-identifier: wego-8dc7bd5721626a72fece116959297a81
+  name: loki
+  namespace: wego-system
+spec:
+  branch: main
+  config_url: ssh://git@github.com/weaveworks-gitops-test/wego-test-app-q21e1hqs.git
+  deployment_type: helm
+  path: loki
+  source_type: helm
+  url: https://charts.kube-ops.io
